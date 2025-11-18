@@ -5,7 +5,7 @@ requires = [
 ]
 
 [project]
-name = "allianceauth-corptools-zoo"
+name = "allianceauth-corp-tools-zoo"
 description = "Corp Level Toolbox for directors and CEO's"
 readme = "README.md"
 keywords = [
