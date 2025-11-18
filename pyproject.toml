@@ -5,7 +5,7 @@ requires = [
 ]
 
 [project]
-name = "allianceauth-corptools"
+name = "allianceauth-corptools-zoo"
 description = "Corp Level Toolbox for directors and CEO's"
 readme = "README.md"
 keywords = [
@@ -50,9 +50,9 @@ dependencies = [
 optional-dependencies.test = [
     "allianceauth-securegroups",
 ]
-urls.Homepage = "https://github.com/Solar-Helix-Independent-Transport/allianceauth-corp-tools"
-urls.Source = "https://github.com/Solar-Helix-Independent-Transport/allianceauth-corp-tools"
-urls.Tracker = "https://github.com/Solar-Helix-Independent-Transport/allianceauth-corp-tools/issues"
+urls.Homepage = "https://github.com/guarzo/allianceauth-corp-tools-zoo"
+urls.Source = "https://github.com/guarzo/allianceauth-corp-tools-zoo"
+urls.Tracker = "https://github.com/guarzo/allianceauth-corp-tools-zoo/issues"
 
 [tool.hatch.version]
 path = "corptools/__init__.py"
