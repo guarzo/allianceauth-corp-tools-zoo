@@ -12,23 +12,21 @@ const CharMenuRight = () => {
   const { t } = useTranslation();
 
   const isLoading = useIsFetching();
-  const [innerHtmlEmptied, setInnerHtmlEmptied] = React.useState(false);
 
   React.useEffect(() => {
-    if (!innerHtmlEmptied) {
-      if (menuRoot) {
-        menuRoot.innerHTML = "";
-        setInnerHtmlEmptied(true);
+    if (menuRoot) {
+      // Clear existing content safely by removing children one at a time
+      while (menuRoot.firstChild) {
+        menuRoot.removeChild(menuRoot.firstChild);
       }
     }
-  }, [innerHtmlEmptied]);
+  }, []);
 
   const menuListLink = {
     link: "account/list",
     name: t("Account List"),
   };
 
-  if (!innerHtmlEmptied) return null;
   if (!menuRoot) {
     return <></>;
   }
