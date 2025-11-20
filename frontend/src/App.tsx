@@ -81,12 +81,11 @@ i18n
 
 function App() {
   return (
-    <React.StrictMode>
-      <QueryClientProvider client={queryClient}>
-        <NuqsAdapter>
-          <Router>
-            <Routes>
-              <Route path="audit/r/:characterID/" element={<CharacterAudit />}>
+    <QueryClientProvider client={queryClient}>
+      <NuqsAdapter>
+        <Router>
+          <Routes>
+            <Route path="audit/r/:characterID/" element={<CharacterAudit />}>
                 <Route index element={<Navigate to="account/overview" replace />} />
                 <Route path="account/overview" element={<CharacterOverview />} />
                 <Route path="account/status" element={<CharacterStatus />} />
@@ -171,7 +170,6 @@ function App() {
           </Router>
         </NuqsAdapter>
       </QueryClientProvider>
-    </React.StrictMode>
   );
 }
 
