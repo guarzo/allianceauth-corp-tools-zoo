@@ -22,7 +22,6 @@ import CorporationAudit from "./Pages/Corp/Audit";
 import Structures from "./Pages/Corp/Structures";
 import TimeAgo from "javascript-time-ago";
 import en from "javascript-time-ago/locale/en";
-import React from "react";
 import { Card } from "react-bootstrap";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { Navigate, Route, BrowserRouter as Router, Routes } from "react-router-dom";
